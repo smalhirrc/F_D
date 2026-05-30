@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(151, 194, 64);
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo a{
+    color: #000;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font: inherit;
+    color: #000;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* FOOTER */
+.site-footer{
+    border: 1px solid;
+    background-color: rgb(85, 2, 2);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+    .footer-container{
+        /* background-color: rgb(170, 170, 171); */
+    }
+
+        .footer-logo{
+            /* border: 2px solid orange; */
+            display: flex;
+            justify-content: flex-start;
+            padding: 1rem 2rem;
+        }
+
+        .footer-logo a{
+            color: #fff;
+        }
+
+        .footer-links{
+            /* border: 2px solid orange; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .footer-column{
+
+            }
+
+            .footer-column h3{
+                color: #fff;
+            }
+
+            .footer-column ul{
+                list-style: none;
+            }
+
+            .footer-column ul li{
+                margin: 10px auto;
+            }
+
+            .footer-column ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .footer-column ul li a:hover{
+                text-decoration: underline;
+            }
+
+    .social-links{
+        /* border: 2px solid orange; */
+        /* background-color: rgb(110, 110, 111); */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social-links a{
+        color: #fff;
+    }
+
+    .footer-bottom{
+        /* background-color: rgb(73, 73, 73); */
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    }
+
+    @media(max-width: 768px){
+        .footer-links{
+            flex-direction: column;
+            padding: 1rem;
+        }
+    }
