@@ -23,21 +23,9 @@ require 'header.php';
                 <button type="button" class="location-btn" onclick="getLocation()"> Use My Location</button>
             </div>
         </div>
-
         <div id="map">
-
         </div>
-        <script>
-            function getLocation(){
-                document.getElementById("address-search-container").style.display = "none";
-
-                navigator.geolocation.getCurrentPosition(position => {
-                const { latitude, longitude } = position.coords;
-                // Show a map centered at latitude / longitude.
-                map.innerHTML = '<iframe width="700" height="300" src="https://maps.google.com/maps?q='+latitude+','+longitude+'&amp;z=15&amp;output=embed"</iframe>' 
-                }); 
-            }   
-        </script>
+        <script src="user_location.js"></script>
 
         <div class="restaurants">
             <h2>Explore local restaurants</h2>
