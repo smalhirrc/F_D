@@ -13,6 +13,7 @@ require 'header.php';
 </head>
 <body>
     <main id="main_content_container">
+        
         <div id="address_search_container">
             <!-- search input, search button, track location button -->
              <div id="input">
@@ -23,6 +24,7 @@ require 'header.php';
                 <button type="button" class="location_btn" onclick="getLocation()"> Use My Location</button>
             </div>
         </div>
+
         <div id="map">
         </div>
         <script src="user_location.js"></script>
@@ -41,7 +43,8 @@ require 'header.php';
                 <li></li>
             </ul>
         </div>
-    <main>
+
+    </main>
 
 </body>
 </html>

@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
 }
 
+/************** WEBSITE'S FORMS, INPUTS, SELECTS, BUTTONS AND ERRORS - CONSISTENT STYLING *****************/
 .form_input{
     display: block;
     height: 2.2rem;
@@ -72,25 +73,7 @@
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* HEADER */
+/************************************************* HEADER ***********************************************/
 .site_header {
     display: flex;
     justify-content: space-between;
@@ -141,32 +124,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */
+/************************************************* FOOTER ***********************************************/
 .site_footer{
     border: 1px solid;
     background-color: rgb(0, 0, 0);
@@ -176,7 +134,7 @@
 }
 
     .footer_container{
-
+        
     }
 
         .footer_logo{
@@ -242,36 +200,7 @@
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  LOCATION TRACKING */
+/**************************  INDEX PAGE RESTAURANTS SEARCH CONTAINER STYLING ****************************/
 #address_search_container{
     /* border: 1px solid; */
     width: 100%;
@@ -334,43 +263,14 @@
 }
 
 .location_btn{
-   
+    background-color: #007bff;
+    color: #fff;
+}
+.location_btn:hover{
+    background-color: rgb(0, 110, 255);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ADD RESTAURANT FORM PAGE */
+/************************************ ADD NEW STORE PAGE - FORM ************************************/
 #add_store_main_content_container{
     width: 100%;
     display: flex;
@@ -481,43 +381,12 @@
         display: none;
     }
 
-    .add_store_form_container{
+    #add_store_form_container{
         min-width: 100%;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**************************** DISPLAY STOREPAGE AFTER SUCCESSFUL STORE ADDITION *************************/
 #store_added_main_content_container{
     background-color: #f9f9f9;
 }

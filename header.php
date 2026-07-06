@@ -17,6 +17,7 @@
             <ul class="nav_links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="add_store.php">Add Restaurant</a></li>
+                <li><a href="store_list.php">Restaurant List</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Products</a></li>
