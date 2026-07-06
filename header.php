@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="site_header">
         <div class="logo">
             <a href="index.php">
                 <img src="images/logo.png" alt="Website Logo">
@@ -14,9 +14,9 @@
         </div>
 
         <nav class="navbar">
-            <ul class="nav-links">
+            <ul class="nav_links">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="add_restaurant.php">Add Restaurant</a></li>
+                <li><a href="add_store.php">Add Restaurant</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Products</a></li>

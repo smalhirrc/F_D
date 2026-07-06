@@ -12,15 +12,15 @@ require 'header.php';
     <title>FoodDeliveryApp</title>
 </head>
 <body>
-    <main id="main-content-container">
-        <div id="address-search-container">
+    <main id="main_content_container">
+        <div id="address_search_container">
             <!-- search input, search button, track location button -->
              <div id="input">
                 <input type="text" id="location" name="location" value="" placeholder="Enter your address, city, or postal code"/>
             </div>
             <div id="buttons">
-                <button type="submit" class="search-btn"> Search Restaurants</button>
-                <button type="button" class="location-btn" onclick="getLocation()"> Use My Location</button>
+                <button type="submit" class="search_btn"> Search Restaurants</button>
+                <button type="button" class="location_btn" onclick="getLocation()"> Use My Location</button>
             </div>
         </div>
         <div id="map">

@@ -1,18 +1,18 @@
-    <footer class="site-footer">
+    <footer class="site_footer">
 
-        <div class="footer-container">
+        <div class="footer_container">
 
             <!-- Logo Section -->
-            <div class="footer-logo">
+            <div class="footer_logo">
                 <a href="index.html">
                     <img src="images/logo.png" alt="Website Logo">
                 </a>
             </div>
 
             <!-- Footer Links -->
-            <div class="footer-links">
+            <div class="footer_links">
 
-                <div class="footer-column">
+                <div class="footer_column">
                     <h3>Company</h3>
                     <ul>
                         <li><a href="#">About Us</a></li>
@@ -22,7 +22,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer_column">
                     <h3>Services</h3>
                     <ul>
                         <li><a href="#">Products</a></li>
@@ -32,7 +32,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer_column">
                     <h3>Legal</h3>
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
@@ -47,7 +47,7 @@
         </div>
 
         <!-- Social Media -->
-        <div class="social-links">
+        <div class="social_links">
 
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.svg" alt="Facebook">
@@ -68,7 +68,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="footer-bottom">
+        <div class="footer_bottom">
             <p>&copy; 2026 Your Website Name. All Rights Reserved.</p>
         </div>
 

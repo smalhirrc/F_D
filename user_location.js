@@ -7,7 +7,7 @@ function load(){
 function getLocation(){
     let map = document.getElementById("map");
     // document.getElementById("address-search-container").innerHTML = "";
-    document.getElementById("address-search-container").appendChild(map);
+    document.getElementById("address_search_container").appendChild(map);
 
     navigator.geolocation.getCurrentPosition(position => {
     const { latitude, longitude } = position.coords;
