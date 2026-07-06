@@ -436,3 +436,99 @@
     padding: 10px;
     border: 1px solid;
 }
+
+/********************************************* LOGIN FORM STYLES ****************************************/
+#login_form_container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#login_form_container h1{
+    text-align: center;
+}
+
+#login_form_container form{
+    display: flex;
+    flex-direction: column;
+}
+
+#login_form_container form label{
+    margin-bottom: 5px;
+}
+
+#login_form_container form input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login_form_container form button{
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login_form_container form button:hover{
+    background-color: #0056b3;
+}
+
+#login_form_container div p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error{
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/********************************************* REGISTER FORM STYLES ****************************************/
+#register_form_container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#register_form_container h1{
+    text-align: center;
+}
+
+#register_form_container form{
+    display: flex;
+    flex-direction: column;
+}
+
+#register_form_container form label{
+    margin-bottom: 5px;
+}
+
+#register_form_container form input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#register_form_container form button{
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#register_form_container form button:hover{
+    background-color: #218838;
+}
+
+#register_form_container div p{
+    text-align: center;
+    margin-top: 10px;
+}

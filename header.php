@@ -18,6 +18,12 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="add_store.php">Add Restaurant</a></li>
                 <li><a href="store_list.php">Restaurant List</a></li>
+                <?php if(isset($_SESSION['username'])): ?>
+                    <li><a href="logout.php">Logout</a></li>
+                <?php else: ?>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Register</a></li>
+                <?php endif; ?>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Products</a></li>

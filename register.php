@@ -1,0 +1,75 @@
+<?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+require 'databaseconnect.php';
+
+$username = isset($_POST['username']) ? $_POST['username'] : '';
+$password = isset($_POST['password']) ? $_POST['password'] : '';
+
+$validate_username = filter_var($username, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z0-9_]{3,20}$/")));
+
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if(!empty($validate_username) && !empty($password)){
+        // Check if username already exists
+        $stmt = $db->prepare("SELECT * FROM Storiers WHERE user_name = :validate_username LIMIT 1");
+        $stmt->bindParam(':validate_username', $validate_username);
+        $stmt->execute();
+
+        if($stmt->rowCount() > 0){
+            $error_message = "Username already exists. Please choose a different username.";
+        }
+        else{
+            // Insert new user into the database
+            $stmt = $db->prepare("INSERT INTO Storiers (user_name, password_hash) VALUES (:validate_username, :password)");
+            $stmt->bindParam(':validate_username', $validate_username);
+            $stmt->bindParam(':password', password_hash($password, PASSWORD_DEFAULT));
+            if($stmt->execute()){
+                // Registration successful
+                session_start();
+                $_SESSION['username'] = $validate_username;
+                header("Location: index.php");
+                exit();
+            }
+            else{
+                $error_message = "An error occurred during registration. Please try again.";
+            }
+        }
+    }
+    else {
+        $error_message = "Invalid username or password.";
+    }
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
+</head>
+<body>
+    <?php include 'header.php'; ?>
+    <main>
+        <div id="register_form_container">
+            <h1>Register</h1>
+            <form action="register.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+            <div>
+                <?php if(isset($error_message)): ?>
+                    <p class="error"><?php echo $error_message; ?></p>
+                <?php endif; ?>
+                <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
